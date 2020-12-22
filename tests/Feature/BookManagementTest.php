@@ -75,8 +75,6 @@ class BookManagementTest extends TestCase
     /** @test */
     public function an_new_author_is_automatically_added()
     {
-        $this->withoutExceptionHandling();
-
         $this->post('/books', [
             'title' => 'Cool Book Title',
             'author_id' => 'Victor'
